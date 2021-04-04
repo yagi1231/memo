@@ -8,7 +8,7 @@ memo_type = gets.chomp.to_i
 
   if memo_type == 1
     puts "ファイル名を入力してください"
-    memo_title = gets.to_s
+    memo_title = gets.chomp.to_s
     puts "文字を入力してください"
     puts "文字の入力が終わったら『ctrl＋D』を押してください"
     memo_file = readline.chomp
@@ -20,7 +20,7 @@ memo_type = gets.chomp.to_i
   
   elsif memo_type == 2
     puts "変更したいファイルを入力してください"
-    memo_title = gets.to_s
+    memo_title = gets.chomp.to_s
     puts"追加メモを入力してください"
      puts "文字の入力が終わったら『ctrl＋D』を押してください"
     memo_file = readline.chomp
